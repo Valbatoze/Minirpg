@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="app.css">
+    <title>Test</title>
+</head>
+<body>
+    <!-- Selection de la classe (Etape 1)-->
+    <div class="center stepOne">
+        <div class="card" id="Warrior">
+            <div class="container">
+              <h4><b>Guerrier</b></h4>
+              <p>Une classe pour résister aux ennemies</p>
+            </div>
+            <span class="tooltiptext">
+                <b>Stats de base:</b>
+                <div style="display:flex; flex-direction: column;">
+                <span>hp: 100,</span>
+                <span>mana: 0,</span>
+                <span>magie: 0,</span>
+                <span>attack: 20,</span>
+                <span>defense: 30,</span>
+                <span>magicalDefense: 30,</span>
+                <span>agility: 30,</span>
+                <span>speed: 40</span>
+                </div></span>
+          </div>
+          <div class="card" id="Magician">
+            <div class="container">
+              <h4><b>Mage</b></h4>
+              <p>Une classe pour faire des dégats de zone</p>
+            </div>
+            <span class="tooltiptext">
+                <b>Stats de base:</b>
+                <div style="display:flex; flex-direction: column;">
+                    <span>hp: 60,</span>
+                    <span>mana: 60,</span>
+                    <span>magie: 40,</span>
+                    <span>attack: 5,</span>
+                    <span>defense: 10,</span>
+                    <span>magicalDefense: 10,</span>
+                    <span>agility: 15,</span>
+                    <span>speed: 35</span>
+                </div>
+            </span>
+          </div>
+          <div class="card" id="Roublard">
+            <div class="container">
+              <h4><b>Roublard</b></h4>
+              <p>Une classe furtive ayant un gain d'or supplémentaire</p>
+            </div>
+            <span class="tooltiptext">
+                <b>Stats de base:</b>
+                <div style="display:flex; flex-direction: column;">
+                    <span>hp: 60,</span>
+                    <span>mana: 25,</span>
+                    <span>magie: 10,</span>
+                    <span>attack: 45,</span>
+                    <span>defense: 10,</span>
+                    <span>magicalDefense: 10,</span>
+                    <span>agility: 35,</span>
+                    <span>speed: 65</span>
+                </div>
+            </span>
+          </div>
+    </div>
+
+    <!-- Création du personnage (Etape 2)-->
+    <div class="center stepTwo" hidden>
+        <div class="container">
+            <h3>Votre nom:</h3>
+            <input type="text" id="name" />
+        </div>
+        <button type="button" id="btnStepTwo">Next</button>
+    </div>
+
+    <div class="stepThree" hidden>
+        <div class="header">
+            <span id="myName"></span>
+            <span id="myHp"></span>
+            <span id="myMagie"></span>
+            <span id="myGold"> </span>
+        </div>
+        <div class="center menu">
+            <h1>Actions disponible:</h1>
+            <div>
+                <button type="button" id="fightTravel">Combat</button>
+                <button type="button" id="TimeToPowerUp">Amélioration</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal center profile" hidden>
+        <span class="close">&times;</span>
+        <div class="container">
+            <div class="modal-header">
+                <h3>Stats de base:</h3>
+              </div>
+            <div style="display:flex;
+            flex-direction: column;
+            color:white;
+            text-align: left;">
+                <span id="myProfileName"></span>
+                <span id="myProfileClasse"></span>
+                <span id="myProfileHp"></span>
+                <span id="myProfileMana"></span>
+                <span id="myProfileMagie"> </span>
+                <span id="myProfileAttack"></span>
+                <span id="myProfileDefense"></span>
+                <span id="myProfileMagicalDefense"></span>
+                <span id="myProfileAgility"></span>
+                <span id="myProfileSpeed"></span>
+                <span id="myProfileGold"></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="fight" hidden>
+        <div class="enemyBloc">
+            <span id="ennemyName"></span>
+            <span id="ennemyHp"></span>
+        </div>
+        <div class="allyBloc">
+            <span id="allyName"></span>
+            <span id="allyHp"></span>
+            <button type="button" id="attackEnnemy">Attack</button>
+        </div>
+    </div>
+
+    <div class="modal center successFight" hidden>
+        <span class="closeDropSuccess">&times;</span>
+        <div class="container">
+            <div class="modal-header">
+                <h3>VICTORY</h3>
+              </div>
+              <div style="display:flex;
+              flex-direction: column;
+              color:white;
+              text-align: left;">
+                  <span id="dropFight"></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal center defeatFight" hidden>
+        <span class="closeDropDefeat">&times;</span>
+        <div class="container">
+            <div class="modal-header">
+                <h3>DEFEAT</h3>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="static/main.js" type="module"></script>
+</body>
+</html>

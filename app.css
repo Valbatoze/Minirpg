@@ -1,0 +1,137 @@
+body {
+    background-color: #1a1a1a;
+}
+img {
+    width: 100%;
+    max-width: 150px;
+}
+.center {
+    margin: auto;
+    width: 50%;
+    border: 3px solid white;
+    text-align: center;
+}
+.container {
+    padding: 2px 16px;
+    display: inline-block;
+}
+.container h3 {
+    color: white;
+}
+input[type=text] {
+    border: none;
+    border-bottom: 2px solid white;
+    background-color: transparent;
+    color: white;
+}
+#btnStepTwo {
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+}
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    position: relative;
+    cursor: pointer;
+    color: #616161;
+}
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    background-color: #3b3b3b;
+    color: white;
+}
+.card .tooltiptext {
+    visibility: hidden;
+    width: 150px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    top: -5px;
+    left: 105%;
+}
+.card:hover .tooltiptext {
+    visibility: visible;
+}
+.header {
+    left: auto;
+    color: white;
+}
+.menu {
+    color: white;
+}
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  #myName {
+      cursor: pointer;
+  }
+
+  .fight {
+      color: white;
+  }
+  .enemyBloc {
+    position: absolute;
+    right: 0;
+    width: 100px;
+    height: 120px;
+  }
+
+  .allyBloc {
+    position: absolute;
+    left: 0;
+    width: 100px;
+    height: 120px;
+  }
+
+  .closeDropSuccess {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .closeDropSuccess:hover,
+  .closeDropSuccess:focus {
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .closeDropDefeat {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .closeDropDefeat:hover,
+  .closeDropDefeat:focus {
+    text-decoration: none;
+    cursor: pointer;
+  }
